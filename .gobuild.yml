@@ -1,0 +1,17 @@
+author: liujiuwu@gmail.com
+description: >
+        Hmm. this is a test.
+        hahaha
+
+filesets:
+    includes:
+        - main.go
+    excludes:
+        - \.git
+    depth: 3
+settings:
+        targetdir: ""
+        build: |
+            test -d Godeps && go(){ godep go "$@";} ; go install -v
+        outfiles:
+            - packer
