@@ -4,8 +4,6 @@ description: >
         hahaha
 
 filesets:
-    includes:
-        - main.go
     excludes:
         - \.git
     depth: 3
